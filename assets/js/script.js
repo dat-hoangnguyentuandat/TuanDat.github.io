@@ -14,7 +14,7 @@ function openSocial(type) {
     case 'github':
       url = 'https://github.com/Kuro-z04';
       break;
-    case 'X':
+    case 'facebook':
       url = 'https://www.facebook.com/hoangdatlnbp/';
       break;
   }
