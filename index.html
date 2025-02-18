@@ -1,93 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- charset + mobile layout -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- seo + discord embed -->
+  <meta content="hyeoski.cf" property="og:title" />
+  <meta content="Hyeoski#2225" property="og:description" />
+  <meta content="https://hyeoski.cf" property="og:url" />
+  <meta content="Hyeoski#2225" name="description" />
+  <meta content="#FFBDEB" data-react-helmet="true" name="theme-color" />
+
+  <!-- title + favicon -->
+  <title>hyeoski.cf | welcome</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png"/>
+
+  <!-- assets -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+
+  <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="assets/js/script.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="intro">
+    <p id="intro-text"></p>
+  </div>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Hi, I'm [Your Name]. I'm a passionate web developer.</p>
-                <a href="#contact" class="cta-button">Get in touch</a>
-            </div>
-        </section>
+  <div class="bg-image thunder" style="display: none">
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+  </div>
 
-        <section id="about">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <p>I'm a creative and detail-oriented web developer with a passion for building beautiful, functional websites. With expertise in front-end and back-end technologies, I strive to create seamless user experiences.</p>
-        </section>
+  <div class="main" style="display: none">
+    <div class="box">
+      <div class="header">
+        <p class="maintext">Hyeoski</p>
+        <span class="subtext"
+          ><p id="subtext"></p>
+          developer</span
+        >
+      </div>
 
-        <section id="projects">
-            <h2><i class="fas fa-code"></i> My Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <i class="fas fa-laptop-code project-icon"></i>
-                    <h3>Project 1</h3>
-                    <p>A responsive e-commerce website built with React and Node.js.</p>
-                </div>
-                <div class="project">
-                    <i class="fas fa-mobile-alt project-icon"></i>
-                    <h3>Project 2</h3>
-                    <p>A cross-platform mobile app developed using React Native.</p>
-                </div>
-                <div class="project">
-                    <i class="fas fa-database project-icon"></i>
-                    <h3>Project 3</h3>
-                    <p>A data visualization dashboard using D3.js and MongoDB.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2><i class="fas fa-cogs"></i> My Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fab fa-html5"></i> HTML5</li>
-                <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                <li><i class="fab fa-js"></i> JavaScript</li>
-                <li><i class="fab fa-react"></i> React</li>
-                <li><i class="fab fa-node"></i> Node.js</li>
-                <li><i class="fab fa-python"></i> Python</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      <div class="footer">
+        <img src="assets/img/discord-512.png" class="social-logo" onclick="openSocial('discord')"></img>
+        <img src="assets/img/github-512.png" class="social-logo" onclick="openSocial('github')"></img>
+        <img src="assets/img/twitter-512.png" class="social-logo" onclick="openSocial('twitter')"></img>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
