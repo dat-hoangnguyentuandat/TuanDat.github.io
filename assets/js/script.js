@@ -72,21 +72,6 @@ function switchScreen() {
       startMainTyping();
     });
   });
-
-  ['background'].forEach(function (audioName) {
-    let fullPath = `assets/audio/${audioName}.mp3`;
-
-    let audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', fullPath);
-    audioElement.style.display = 'none';
-
-    audioElement.addEventListener('ended', function () {
-      this.currentTime = 0;
-      this.play();
-    });
-
-    audioElement.play();
-  });
 }
 
 document.addEventListener('keydown', function (e) {
