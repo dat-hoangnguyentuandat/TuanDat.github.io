@@ -9,13 +9,13 @@ function openSocial(type) {
 
   switch (type) {
     case 'discord':
-      url = 'https://discord.com/users/774299626697523200';
+      url = 'https://discord.com/channels/823981540567416834';
       break;
     case 'github':
-      url = 'https://github.com/5rq';
+      url = 'https://github.com/Kuro-z04';
       break;
-    case 'twitter':
-      url = 'https://twitter.com/hyeoski';
+    case 'X':
+      url = 'https://x.com/Kuro_0z4?t=b2j69LPXEVFhrSeE7eCOpw&s=09';
       break;
   }
 
@@ -39,7 +39,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Brainless', 'Stupid', 'Dumb'];
+  let text = ['😶', '😐', '😑'];
 
   text.forEach(function (language, index) {
     typer.move(null);
@@ -64,7 +64,7 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'hyeoski.cf | home';
+  document.title = 'TuanDat | home';
 
   $('.intro').fadeOut(1000, function () {
     $('.bg-image').fadeIn(1000);
