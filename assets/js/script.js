@@ -39,7 +39,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Chill', 'Sleep', 'Code'];
+  let text = [' Chill ', ' Sleep ', ' Code '];
 
   text.forEach(function (language, index) {
     typer.move(null);
